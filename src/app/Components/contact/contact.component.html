@@ -1,0 +1,20 @@
+<br>
+<br>
+<div class="w3-container w3-animate-opacity">
+        <br><br>
+        <div class="w3-display-middle" *ngIf="load"><p><i class="fa fa-spinner w3-spin" style="font-size:64px;color:#ff4dd2"></i></p></div>
+        <div class="w3-center w3-container" style="padding-top:30px;padding-left:10%;padding-right:10%">
+            <div class="w3-container" style="background-color:#e7e8ea">
+                <h2>Contact Me Now</h2>
+            </div>
+            <form [formGroup]="contactForm" class="w3-container w3-light-grey" (ngSubmit)="sendEmail(contactForm.value)"><br>
+                <!-- <label class="fieldLabel">Name:</label> -->
+                <input type="text" id="name" class="w3-input w3-border-grey" formControlName="name" placeholder="Full Name" required><br>
+                <!-- <label class="fieldLabel">Email:</label> -->
+                <input type="email" id="email" class="w3-input w3-border-grey" formControlName="email" placeholder="Email" required><br>
+                <!-- <label class="fieldLabel">Message:</label> -->
+                <textarea type="text" id="message" class="w3-input w3-border-grey" formControlName="message" placeholder="Message" required></textarea><br>
+                <p><button class="w3-button w3-grey">Submit</button></p>
+            </form>
+        </div>
+</div>

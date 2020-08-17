@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  // overflow-y:scroll;
+}
+
+html{
+  overflow:auto;
+  background-image: linear-gradient(to bottom left, #898989, #a5a5a5, #c2c2c2, #e0e0e0, #ffffff);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
